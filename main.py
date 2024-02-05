@@ -10,8 +10,8 @@ def password_input() -> str:
         try:
             pw = input("Type the password for testing: ")
             return pw
-        except:
-            print("Please enter a valid password.")
+        except (KeyboardInterrupt, EOFError):
+            print("\nPlease enter a valid password.")
 
 def password_check(pw: str) -> tuple:
     length = len(pw) >= 12
@@ -31,7 +31,7 @@ def evaluation(checked_pw: tuple) -> None:
     if count == 5:
         print("Your password is strong!")
     elif count == 4 and length:
-        print("Your password is good!\nHere is an improvement you should make.")
+        print("Your password is good! Here is an improvement you should make.")
     elif count == 4 and not length:
         print("Your password would be strong if you increase its length.")
     elif count == 3 and length:
