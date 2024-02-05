@@ -14,9 +14,36 @@
 
 ## 2. Installation <a name="installation"></a>
 
-This section will describe how to install the `password_test_CLI` tool. If there are any dependencies, make sure to list them here.
+### Option 1: Copy and Run
 
-pip install password_test_CLI
+1. Copy the code into your own Python file (e.g., `main.py`).
+2. Open a terminal.
+3. Navigate to the directory containing your Python file.
+4. Run the program with the command: 
+
+    ```bash
+    python main.py
+    ```
+
+### Option 2: Clone and Run
+
+1. Clone the repository onto your machine with the following command:
+
+    ```bash
+    git clone https://github.com/bthee/password_test_CLI
+    ```
+
+2. Navigate into the cloned directory:
+
+    ```bash
+    cd password_test_CLI
+    ```
+
+3. Run the program with the command:
+
+    ```bash
+    python main.py
+    ```
 
 ## 3. Structure <a name="structure"></a>
 
