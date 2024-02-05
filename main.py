@@ -1,4 +1,5 @@
 def start() -> int:
+    # Asks the user to start or exit the program.
     user = input("Press 'enter' to 'begin' or type anything to 'exit'.")
     if user:
         print("Goodbye...")
@@ -6,6 +7,7 @@ def start() -> int:
     return 0
 
 def password_input() -> str:
+    # Prompts the user to input a password.
     while True:
         try:
             pw = input("Type the password for testing: ")
@@ -14,6 +16,7 @@ def password_input() -> str:
             print("\nPlease enter a valid password.")
 
 def password_check(pw: str) -> tuple:
+    # Logic to check the password strength. Returns a tuple with Boolean values for the evaluation.
     length = len(pw) >= 12
     number = any(char.isnumeric() for char in pw)
     upper_ch = any(char.isupper() for char in pw)
@@ -25,6 +28,7 @@ def password_check(pw: str) -> tuple:
 
 
 def evaluation(checked_pw: tuple) -> None:
+    #  Prints password strength evaluation.
     length, number, upper_ch, lower_ch, special_ch, count = checked_pw
 
     print("Password Strength Evaluation:")
