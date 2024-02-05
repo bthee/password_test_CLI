@@ -1,6 +1,6 @@
 import sys
 
-def start():
+def start() -> int:
     user = input("Press 'enter' to 'begin' or type anything to 'exit'.")
     if user != "":
         print("Goodbye...")
@@ -8,12 +8,12 @@ def start():
     return 0
 
 
-def password_inpout():
+def password_inpout() -> str:
     pw = input("Type the password for testing: ")
     return pw
 
 
-def password_check(pw):
+def password_check(pw: str) -> tuple:
     length = False
     number = False
     upper_ch = False
@@ -48,23 +48,21 @@ def password_check(pw):
     return (length, number, upper_ch, lower_ch, special_ch, count)
 
 
-def evaluation(checked_pw):
+def evaluation(checked_pw: tuple) -> int:
     length, number, upper_ch, lower_ch, special_ch, count = checked_pw
 
     if count == 5:
         print("Your password is strong!")
     elif count == 4 and length:
-        print("Your password is good!\nHere are some improvements you could make.")
+        print("Your password is good!\nHere is an improvement you should make.")
+    elif count == 4 and not length:
+        print("Your password would be strong, if you ...")
     elif count == 3 and length:
-        print("Your password is okay.\nHere are some improvements you could make.")
-    elif count == 2:
-        print("Your password is weak.\nHere are some improvements you should make.")
-    elif count == 1:
-        print("Your password is very weak!\nHere are some improvements you should make.")
-    elif count == 0:
-        print("Your password is extremely weak!\nHere are some improvements you should make.")
-    else:
-        print("You get the idea, but ...")
+        print("Your password is okay. Here are some improvements you should make.")
+    elif count == 3 and not length:
+        print("Your password would be strong, if you ...")
+    elif count <= 2:
+        print("\nYour password is very weak! You should make the following improvements!")
 
     if not length:
         print("- Increase the length of your password to atleast 12 characters.")
@@ -78,7 +76,7 @@ def evaluation(checked_pw):
         print("- Include atleast one special character like '@, $, % ...'")
 
 
-def main():
+def main() -> int:
     print("Welcome! Here you can test the strength of your password.\n")
     start()
     pw = password_inpout()
