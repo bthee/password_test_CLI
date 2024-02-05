@@ -67,4 +67,4 @@ To run `password_test_CLI`, follow these steps:
 
 ## 5. Examples <a name="examples"></a>
 
-Provide examples of different scenarios and how the tool evaluates the password strength.
+![Example Image](example.jpg)
