@@ -21,7 +21,7 @@ def password_check(pw):
     special_ch = False
     count = 0
 
-    if len(pw) > 12:
+    if len(pw) >= 12:
         length = True
     
     for i in pw:
@@ -52,17 +52,19 @@ def evaluation(checked_pw):
     length, number, upper_ch, lower_ch, special_ch, count = checked_pw
 
     if count == 5:
-        print("Your password is strong!\n")
-    elif count == 4:
-        print("Your password is good!\nHere are some improvements you could make.\n")
-    elif count == 3:
-        print("Your password is okay!\nHere are some improvements you could make.\n")
+        print("Your password is strong!")
+    elif count == 4 and length:
+        print("Your password is good!\nHere are some improvements you could make.")
+    elif count == 3 and length:
+        print("Your password is okay.\nHere are some improvements you could make.")
     elif count == 2:
-        print("Your password is weak!\nHere are some improvements you should make.\n")
+        print("Your password is weak.\nHere are some improvements you should make.")
     elif count == 1:
-        print("Your password is very weak!\nHere are some improvements you should make.\n")
+        print("Your password is very weak!\nHere are some improvements you should make.")
     elif count == 0:
-        print("Your password is extremely weak!\nHere are some improvements you should make.\n")
+        print("Your password is extremely weak!\nHere are some improvements you should make.")
+    else:
+        print("You get the idea, but ...")
 
     if not length:
         print("- Increase the length of your password to atleast 12 characters.")
