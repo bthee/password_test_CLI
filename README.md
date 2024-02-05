@@ -19,11 +19,6 @@
 1. Copy the code into your own Python file (e.g., `main.py`).
 2. Open a terminal.
 3. Navigate to the directory containing your Python file.
-4. Run the program with the command: 
-
-    ```bash
-    python main.py
-    ```
 
 ### Option 2: Clone and Run
 
@@ -39,12 +34,6 @@
     cd password_test_CLI
     ```
 
-3. Run the program with the command:
-
-    ```bash
-    python main.py
-    ```
-
 ## 3. Structure <a name="structure"></a>
 
 The code is organized into the following functions:
@@ -57,12 +46,24 @@ The code is organized into the following functions:
 
 ## 4. How to Use <a name="how-to-use"></a>
 
-To use `password_test_CLI`, follow these steps:
+To run `password_test_CLI`, follow these steps:
 
-Run the script by executing `python password_test_CLI.py` in your terminal.
-Follow the prompts to either begin or exit the program.
-If you choose to begin, input a password when prompted.
-Receive feedback on the strength of your password based on specified criteria.
+1. Open a terminal.
+2. Navigate to the directory containing the script.
+
+    ```bash
+    cd path/to/password_test_CLI
+    ```
+
+3. Run the script by executing:
+
+    ```bash
+    python password_test_CLI.py
+    ```
+
+4. Follow the prompts to either begin or exit the program.
+5. If you choose to begin, input a password when prompted.
+6. Receive feedback on the strength of your password based on specified criteria.
 
 ## 5. Examples <a name="examples"></a>
 
