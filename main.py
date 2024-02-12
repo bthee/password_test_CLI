@@ -33,15 +33,15 @@ def evaluation(checked_pw: tuple) -> None:
 
     print("Password Strength Evaluation:")
     if count == 5:
-        print("Your password is strong!")
+        print("\nYour password is strong!")
     elif count == 4 and length:
-        print("Your password is good! Here is an improvement you should make.")
+        print("\nYour password is good! Here is an improvement you should make.")
     elif count == 4 and not length:
-        print("Your password would be strong if you increase its length.")
+        print("\nYour password would be strong if you increase its length.")
     elif count == 3 and length:
-        print("Your password is okay. Here are some improvements you should make.")
+        print("\nYour password is okay. Here are some improvements you should make.")
     elif count == 3 and not length:
-        print("Your password would be strong if you increase its length.")
+        print("\nYour password would be strong if you increase its length.")
     elif count <= 2:
         print("\nYour password is very weak! You should make the following improvements!")
 
