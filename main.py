@@ -54,7 +54,7 @@ def evaluation(checked_pw: tuple) -> None:
     if not lower_ch:
         print("- Include at least one lowercase character like 'a, b, c ...'")
     if not special_ch:
-        print("- Include at least one special character like '@, $, % ...'")
+        print("- Include at least one special character like '@, !, $ ...'")
 
 def main() -> int:
     print("Welcome! Here you can test the strength of your password.\n")
