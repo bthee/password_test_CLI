@@ -14,13 +14,13 @@
 
 ## 2. Installation <a name="installation"></a>
 
-### Option 1: Copy and Run
+### Option 1: Copy
 
 1. Copy the code into your own Python file (e.g., `main.py`).
 2. Open a terminal.
 3. Navigate to the directory containing your Python file.
 
-### Option 2: Clone and Run
+### Option 2: Clone
 
 1. Clone the repository onto your machine with the following command:
 
@@ -58,7 +58,7 @@ To run `password_test_CLI`, follow these steps:
 3. Run the script by executing:
 
     ```bash
-    python password_test_CLI.py
+    python password_test_CLI.py or python main.py
     ```
 
 4. Follow the prompts to either begin or exit the program.
